@@ -7,7 +7,7 @@
     "clean": "rm -rf dist",
     "compile": "node build/scripts/compile",
     "build": "npm install && npm run compile",
-    "start": "npm run build && node build/scripts/start",
+    "start": "npm install && node build/scripts/start",
     "develop": "node build/scripts/start",
     "test": "cross-env NODE_ENV=test karma start build/karma.config",
     "test:watch": "npm test -- --watch",
