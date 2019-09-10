@@ -1,13 +1,13 @@
 {
-  "name": "react-redux-starter-kit",
-  "version": "3.0.1",
+  "name": "b-langkawi",
+  "version": "1.0.0",
   "description": "Get started with React, Redux, and React-Router!",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
     "compile": "node build/scripts/compile",
-    "build": "npm run compile",
-    "start": "node build/scripts/start",
+    "build": "npm install && npm run compile",
+    "start": "npm run build && node build/scripts/start",
     "develop": "node build/scripts/start",
     "test": "cross-env NODE_ENV=test karma start build/karma.config",
     "test:watch": "npm test -- --watch",
