@@ -7,8 +7,8 @@
     "clean": "rimraf dist",
     "compile": "node build/scripts/compile",
     "build": "npm run clean && NODE_ENV=production webpack --config build/webpack.config.js --progress --profile --colors && npm run compile",
-    "start": "cross-env NODE_ENV=development node build/scripts/start",
-    "test": "cross-env NODE_ENV=test karma start build/karma.config",
+    "start": "NODE_ENV=development webpack --config build/webpack.config.js --progress --profile --colors && node build/scripts/start",
+    "test": "NODE_ENV=test karma start build/karma.config",
     "test:watch": "npm test -- --watch",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
