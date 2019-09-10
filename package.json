@@ -9,7 +9,6 @@
     "build": "npm run clean && cross-env NODE_ENV=production npm run compile",
     "develop": "cross-env NODE_ENV=development node build/scripts/start",
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build",
     "test": "cross-env NODE_ENV=test karma start build/karma.config",
     "test:watch": "npm test -- --watch",
     "lint": "eslint .",
