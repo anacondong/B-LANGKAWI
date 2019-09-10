@@ -4,8 +4,6 @@
   "description": "Get started with React, Redux, and React-Router!",
   "main": "index.js",
   "scripts": {
-    "compile": "node build/scripts/compile",
-    "build": "npm clean && npm run compile",
     "start": "node build/scripts/start",
     "test": "cross-env NODE_ENV=test karma start build/karma.config",
     "test:watch": "npm test -- --watch",
