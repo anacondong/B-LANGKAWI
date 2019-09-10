@@ -1,13 +1,14 @@
 {
-  "name": "b-langkawi",
-  "version": "1.0.0",
+  "name": "react-redux-starter-kit",
+  "version": "3.0.1",
   "description": "Get started with React, Redux, and React-Router!",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rm -rf dist",
     "compile": "node build/scripts/compile",
-    "build": "npm run clean && cross-env NODE_ENV=production npm run compile",
-    "start": "cross-env NODE_ENV=development node build/scripts/start",
+    "build": "npm run compile",
+    "start": "node build/scripts/start",
+    "develop": "node build/scripts/start",
     "test": "cross-env NODE_ENV=test karma start build/karma.config",
     "test:watch": "npm test -- --watch",
     "lint": "eslint .",
@@ -15,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anacondong/B-LANGKAWI.git"
+    "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
   },
   "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
   "license": "MIT",
